@@ -26,3 +26,4 @@ Function        New-RandomUserCustom                               1.0.0      Ne
 
 ```
 
+User these commands to create new user information for testing.
