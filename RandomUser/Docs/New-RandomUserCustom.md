@@ -1,6 +1,6 @@
 ---
-external help file: NewUser-help.xml
-Module Name: NewUser
+external help file: RandomUser-help.xml
+Module Name: RandomUser
 online version:
 schema: 2.0.0
 ---
@@ -86,4 +86,4 @@ Accept wildcard characters: False
 
 ## RELATED LINKS
 
-[Online Help New-RandomUserCustom}](https://github.com/scottd3v/PlayGround/blob/master/NewUser/Docs/New-RandomUserCustom.md)
+[Online Help New-RandomUserCustom}](https://github.com/scottd3v/PlayGround/blob/master/RandomUser/Docs/New-RandomUserCustom.md)

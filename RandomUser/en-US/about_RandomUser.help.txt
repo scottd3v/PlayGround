@@ -1,5 +1,5 @@
 ﻿TOPIC
-    about_RandomUser
+    about_randomuser
 
 SHORT DESCRIPTION
     The RandomUser module is a tool for regression testing where you want to
@@ -22,6 +22,6 @@ SEE ALSO
     Sample see also
 
 KEYWORDS
-- New-RandUser
+    - New-RandUser
 - New-RandomUserCustom
 
