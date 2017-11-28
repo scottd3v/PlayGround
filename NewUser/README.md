@@ -20,8 +20,8 @@ PS > Get-Command -Module NewUser
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-Function        New-RandomUser                                     1.0.0      NewUser
-Function        New-RandomUserCustom                               1.0.0      NewUser
+`Function        `New-RandomUser                                     1.0.0      NewUser
+`Function        `New-RandomUserCustom                               1.0.0      NewUser
 
 
 ```
