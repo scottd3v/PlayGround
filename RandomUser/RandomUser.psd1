@@ -96,13 +96,13 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-         Tags = @('New','Users','NewUser','RandomUser','Random')
+         Tags = @('New','Users','RandomUser','RandomUser','Random')
 
         # A URL to the license for this module.
-         LicenseUri = 'https://opensource.org/licenses/MIT'
+         LicenseUri = 'https://github.com/scottd3v/PlayGround/blob/master/RandomUser/LICENSE'
 
         # A URL to the main website for this project.
-        ProjectUri = ''
+        ProjectUri = 'https://github.com/scottd3v/PlayGround/tree/master/RandomUser'
 
         # A URL to an icon representing this module.
         # IconUri = ''
