@@ -85,3 +85,5 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Help New-RandomUserCustom}](https://github.com/scottd3v/PlayGround/blob/master/NewUser/Docs/New-RandomUserCustom.md)

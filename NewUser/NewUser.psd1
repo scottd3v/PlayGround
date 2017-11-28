@@ -96,10 +96,10 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+         Tags = @('New','Users','NewUser','RandomUser')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+         LicenseUri = 'https://opensource.org/licenses/MIT'
 
         # A URL to the main website for this project.
         # ProjectUri = ''

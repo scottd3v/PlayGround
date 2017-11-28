@@ -77,3 +77,5 @@ Accept wildcard characters: False
 ## NOTES
 
 ## RELATED LINKS
+
+[Online Help New-RandomUser](https://github.com/scottd3v/PlayGround/blob/master/NewUser/Docs/New-RandomUser.md)
