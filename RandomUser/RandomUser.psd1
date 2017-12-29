@@ -12,7 +12,7 @@
 RootModule = 'RandomUser.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.1.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -30,7 +30,7 @@ CompanyName = 'ScottD3v'
 Copyright = '(c) ScottD3v. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'Creates random user information'
 
 # Minimum version of the Windows PowerShell engine required by this module
 # PowerShellVersion = ''
@@ -70,7 +70,8 @@ Copyright = '(c) ScottD3v. All rights reserved.'
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = @("New-RandomUser",
-                      "New-RandomUserCustom")
+                      "New-RandomUserCustom",
+                      "New-RandomString")
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -108,7 +109,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        # ReleaseNotes = ''
+        ReleaseNotes = 'Added in the function New-RandomString'
 
     } # End of PSData hashtable
 

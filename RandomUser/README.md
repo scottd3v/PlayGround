@@ -16,12 +16,14 @@ After importing you can see all the avaliable commands in the module by running 
 
 ```PowerShell
 
-PS > Get-Command -Module NewUser
+PS RandomUser> Get-Command -Module RandomUser
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-Function        New-RandomUser                                     1.0.0      NewUser
-Function        New-RandomUserCustom                               1.0.0      NewUser
+Function        New-RandomString                                   1.1.0      RandomUser
+Function        New-RandomUser                                     1.0.1      RandomUser
+Function        New-RandomUserCustom                               1.0.1      RandomUser
+
 
 ```
 
