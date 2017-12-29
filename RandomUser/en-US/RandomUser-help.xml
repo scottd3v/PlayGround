@@ -86,7 +86,7 @@
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Help New-RandomUser</maml:linkText>
-        <maml:uri>https://github.com/scottd3v/PlayGround/blob/master/NewUser/Docs/New-RandomUser.md</maml:uri>
+        <maml:uri>https://github.com/scottd3v/PlayGround/blob/master/RandomUser/Docs/New-RandomUser.md</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
@@ -193,7 +193,7 @@
     <command:relatedLinks>
       <maml:navigationLink>
         <maml:linkText>Online Help New-RandomUserCustom}</maml:linkText>
-        <maml:uri>https://github.com/scottd3v/PlayGround/blob/master/NewUser/Docs/New-RandomUserCustom.md</maml:uri>
+        <maml:uri>https://github.com/scottd3v/PlayGround/blob/master/RandomUser/Docs/New-RandomUserCustom.md</maml:uri>
       </maml:navigationLink>
     </command:relatedLinks>
   </command:command>
