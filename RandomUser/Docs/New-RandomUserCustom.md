@@ -1,7 +1,7 @@
 ---
 external help file: RandomUser-help.xml
 Module Name: RandomUser
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -42,7 +42,7 @@ A switch parameter to add three attributes to the random user.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: Attributes
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
@@ -57,7 +57,7 @@ The domain you want to add to the email field of your random user.
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases: 
+Aliases:
 
 Required: True
 Position: 0
