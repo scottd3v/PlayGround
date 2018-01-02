@@ -109,10 +109,10 @@ Function New-RandomString () {
 
     param(
 
-    [Parameter(Mandatory)] ##Test this to see if this can be modified.
+    [Parameter()] 
     [ValidateRange(0,52)]
     [Int]
-    $NumberOfChars
+    $NumberOfChars = 8
 
     )
     begin {}
