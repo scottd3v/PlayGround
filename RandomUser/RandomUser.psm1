@@ -124,7 +124,29 @@ Function New-RandomString () {
 
 }
 
+Function New-RandomStringLower () {
+    [CmdletBinding()]
+
+    param(
+
+    [Parameter()] 
+    [ValidateRange(0,52)]
+    [Int]
+    $NumberOfChars = 8
+
+    )
+    begin {}
+    process{
+        $Random = -join ((65..90) + (97..122) | Get-Random -Count $NumberOfChars | % {[char]$_})
+    }
+
+    end{Return $Random.tolower()}
+
+
+}
+
 # Export only the functions using PowerShell standard verb-noun naming.
 # Be sure to list each exported functions in the FunctionsToExport field of the module manifest file.
 # This improves performance of command discovery in PowerShell.
-Export-ModuleMember -Function New-RandomUser, New-RandomUserCustom, New-RandomString
+
+Export-ModuleMember -Function New-RandomUser, New-RandomUserCustom, New-RandomString, New-RandomStringLower

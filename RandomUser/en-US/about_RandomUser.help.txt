@@ -3,11 +3,11 @@
 
 SHORT DESCRIPTION
     The RandomUser module is a tool for regression testing where you want to
-    autopopulate random users.
+    autopopulate random users or create random strings.
 
 LONG DESCRIPTION
     The RandomUser module is a tool for regression testing where you want to
-    autopopulate random users. There are two functions one
+    autopopulate random users or create random strings. 
 
 EXAMPLES
     Import-Module RandomUser

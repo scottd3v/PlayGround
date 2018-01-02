@@ -39,7 +39,7 @@ Description = 'Creates random user information'
 # PowerShellHostName = ''
 
 # Minimum version of the Windows PowerShell host required by this module
-# PowerShellHostVersion = ''
+# PowerShellHostVersion = '5.0'
 
 # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
 # DotNetFrameworkVersion = ''
@@ -71,7 +71,8 @@ Description = 'Creates random user information'
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = @("New-RandomUser",
                       "New-RandomUserCustom",
-                      "New-RandomString")
+                      "New-RandomString",
+                      "New-RandomStringLower")
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -109,7 +110,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'Added in the function New-RandomString'
+        ReleaseNotes = 'Added new functions New-RandomString and New-RandomStringLower updated bug fixes in New-RandomUser'
 
     } # End of PSData hashtable
 

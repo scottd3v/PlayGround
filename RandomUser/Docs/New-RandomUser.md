@@ -1,7 +1,7 @@
 ---
 external help file: RandomUser-help.xml
 Module Name: RandomUser
-online version: 
+online version:
 schema: 2.0.0
 ---
 
@@ -49,7 +49,7 @@ A switch parameter to add three attributes to the random user.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: Attributes
-Aliases: 
+Aliases:
 
 Required: False
 Position: Named
