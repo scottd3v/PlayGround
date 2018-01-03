@@ -12,7 +12,7 @@
 RootModule = 'RandomUser.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.1.0'
+ModuleVersion = '1.2.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -72,7 +72,8 @@ Description = 'Creates random user information'
 FunctionsToExport = @("New-RandomUser",
                       "New-RandomUserCustom",
                       "New-RandomString",
-                      "New-RandomStringLower")
+                      "New-RandomStringLower",
+                      "New-RandomPassword")
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -110,7 +111,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'Added new functions New-RandomString and New-RandomStringLower updated bug fixes in New-RandomUser'
+        ReleaseNotes = 'Added new function New-RandomPassword'
 
     } # End of PSData hashtable
 
