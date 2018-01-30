@@ -63,3 +63,4 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## NOTES
 
 ## RELATED LINKS
+[Online Help Connect-MXOnline](https://github.com/scottd3v/PlayGround/blob/master/MxLookup/Docs/Connect-MXOnline.md)
