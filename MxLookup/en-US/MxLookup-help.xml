@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Connect-MXOnline</command:name>
+      <command:verb>Connect</command:verb>
+      <command:noun>MXOnline</command:noun>
+      <maml:description>
+        <maml:para>Connects to MxToolBox RESTful API by setting the global variable $MXAPIKEY</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Connects to MxToolBox RESTful API by setting the global variable $MXAPIKEY. The MxAPIKEY can be found once logged into the site https://mxtoolbox.com/restapi.aspx</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Connect-MXOnline</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>MXAPI_key</maml:name>
+          <maml:Description>
+            <maml:para>The MXToolBox API key. This key can be found by navigating to 'https://mxtoolbox.com/restapi.aspx' in a web browser</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>MXAPI_key</maml:name>
+        <maml:Description>
+          <maml:para>The MXToolBox API key. This key can be found by navigating to 'https://mxtoolbox.com/restapi.aspx' in a web browser</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Connect-MXOnline -MXAPI_key '8208nota-v317-4787-8841-a16l919i12dk'</dev:code>
+        <dev:remarks>
+          <maml:para>Sets the MXAPIKEY to '8208nota-v317-4787-8841-a16l919i12dk' and validates connectivity to MxToolbox.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-MxLookup</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>MxLookup</command:noun>
+      <maml:description>
+        <maml:para>The Get-MxLookup command leverages the MxToolBox REST API to lookup DNS or Network attributes for a domain or IP address.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-MxLookup command leverages the MxToolBox REST API to lookup DNS or Network attributes for a domain or IP address. Avaliable commands can be found under the 'accepted values' for the '-Command' parameter.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-MxLookup</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
+          <maml:name>Command</maml:name>
+          <maml:Description>
+            <maml:para>The lookup for the command to return</maml:para>
+          </maml:Description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">mx</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">a</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">dns</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">spf</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">txt</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">soa</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ptr</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">blacklist</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">smtp</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">tcp</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">http</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">https</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">ping</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">trace</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+          <maml:name>Domain</maml:name>
+          <maml:Description>
+            <maml:para>The domain or IP address to run the lookup against.</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
+        <maml:name>Command</maml:name>
+        <maml:Description>
+          <maml:para>The lookup for the command to return</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+        <maml:name>Domain</maml:name>
+        <maml:Description>
+          <maml:para>The domain or IP address to run the lookup against.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Get-MxLookup -Command BLACKLIST -Domain azzipa.com</dev:code>
+        <dev:remarks>
+          <maml:para>This command returns the blacklist results for the domain 'azzipa.com' from MxToolBox</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>
