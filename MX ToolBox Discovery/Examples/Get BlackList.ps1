@@ -1,9 +1,10 @@
 # API Call - GET Example
+
 # Interactive version https://mxtoolbox.com/User/Api/Lookup.aspx
 
-$APIkey = "Enter API Key"
+$Url = "https://api.mxtoolbox.com/api/v1/lookup/blacklist/JumpCloud.com"
 
-$Url = "https://api.mxtoolbox.com/api/v1/lookup/blacklist/entercompanyname.com"
+$APIkey = "8208edff-d317-4787-8841-e16d919b12ac"
 
 $hdrs = @{
     
@@ -11,6 +12,14 @@ $hdrs = @{
 
 }
 
-$APIresults = Invoke-RestMethod -Method GET -Uri $Url  -Header $hdrs
+$APIresults = Invoke-RestMethod -Uri $Url -Method GET -Header $hdrs #Results sored in $APIresults variable
 
-$APIresults | ConvertTo-Json #Show the data structure. "Poor mans Show-Object"
+$APIresults #Shows the returned data
+
+$APIresults | ConvertTo-Json #Show the data structure as it was returned. 
+
+$APIresults | Get-Member #Shows the avaliable properties to select or filter
+
+$APIresults | Select-Object Failed, Warnings, Passed
+
+$APIresults | Select-Object Failed, Warnings, Passed | Format-List
