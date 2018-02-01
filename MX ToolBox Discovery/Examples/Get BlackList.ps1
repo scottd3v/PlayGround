@@ -3,7 +3,7 @@
 
 $Url = "https://api.mxtoolbox.com/api/v1/lookup/blacklist/JumpCloud.com"
 
-$APIkey = "8208edff-d317-4787-8841-e16d919b12ac"
+$APIkey = "Enter your API key"
 
 $hdrs = @{
     
@@ -31,7 +31,7 @@ function Get-MxLookupBasic ($Command, $Domain) {
     
     $Url = "https://api.mxtoolbox.com/api/v1/lookup/$Command/$Domain"
 
-    $APIkey = "8208edff-d317-4787-8841-e16d919b12ac"
+    $APIkey = "Enter your API key"
 
     $hdrs = @{
     
