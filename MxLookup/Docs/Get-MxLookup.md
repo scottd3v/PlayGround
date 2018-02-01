@@ -1,6 +1,6 @@
 ---
-external help file: MxLookup-help.xml
-Module Name: MxLookup
+external help file:
+Module Name:
 online version:
 schema: 2.0.0
 ---
@@ -13,7 +13,7 @@ The Get-MxLookup command leverages the MxToolBox REST API to lookup DNS or Netwo
 ## SYNTAX
 
 ```
-Get-MxLookup [-Command] <String> [-Domain] <String> [<CommonParameters>]
+Get-MxLookup [-Command] <String> -Domain <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,9 +24,7 @@ The Get-MxLookup command leverages the MxToolBox REST API to lookup DNS or Netwo
 ### Example 1
 
 ```powershell
-
 PS C:\> Get-MxLookup -Command BLACKLIST -Domain azzipa.com
-
 ```
 
 This command returns the blacklist results for the domain 'azzipa.com' from MxToolBox
@@ -41,7 +39,7 @@ The lookup for the command to return
 Type: String
 Parameter Sets: (All)
 Aliases:
-Accepted values: mx, a, dns, spf, txt, soa, ptr, blacklist, smtp, tcp, http, https, ping, trace
+Accepted values: mx, a, dns, spf, txt, soa, ptr, blacklist, smtp, http, https, ping, trace
 
 Required: True
 Position: 0
@@ -60,20 +58,33 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: 1
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -IPAddress
+
+Only used when running the 'ptr' Command
+
+```yaml
+Type: INT
+Aliases:
+
+Required: True
+Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName)
 Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable.
-For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### System.String
-
 
 ## OUTPUTS
 
@@ -82,4 +93,5 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## NOTES
 
 ## RELATED LINKS
+
 [Online Help Get-MxLookup](https://github.com/scottd3v/PlayGround/blob/master/MxLookup/Docs/Get-MxLookup.md)

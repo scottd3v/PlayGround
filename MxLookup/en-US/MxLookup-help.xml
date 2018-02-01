@@ -114,7 +114,6 @@
             <command:parameterValue required="false" command:variableLength="false">ptr</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">blacklist</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">smtp</command:parameterValue>
-            <command:parameterValue required="false" command:variableLength="false">tcp</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">http</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">https</command:parameterValue>
             <command:parameterValue required="false" command:variableLength="false">ping</command:parameterValue>
@@ -127,7 +126,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Domain</maml:name>
           <maml:Description>
             <maml:para>The domain or IP address to run the lookup against.</maml:para>
@@ -135,6 +134,18 @@
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
             <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>IPAddress</maml:name>
+          <maml:Description>
+            <maml:para>Only used when running the 'ptr' Command</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">INT</command:parameterValue>
+          <dev:type>
+            <maml:name>INT</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -154,7 +165,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="1" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Domain</maml:name>
         <maml:Description>
           <maml:para>The domain or IP address to run the lookup against.</maml:para>
@@ -162,6 +173,18 @@
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
           <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>IPAddress</maml:name>
+        <maml:Description>
+          <maml:para>Only used when running the 'ptr' Command</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">INT</command:parameterValue>
+        <dev:type>
+          <maml:name>INT</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
