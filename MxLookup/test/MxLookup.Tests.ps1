@@ -1,4 +1,4 @@
-$MxAPI_Key = '8208edff-d317-4787-8841-e16d919b12ac' #Enter your MxToolBox API key to run the tests 
+$MxAPI_Key = '' #Enter your MxToolBox API key to run the tests 
 
 $ModuleManifestName = 'MxLookup.psd1'
 $ModuleManifestPath = "$PSScriptRoot\..\$ModuleManifestName"
