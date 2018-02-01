@@ -1,4 +1,4 @@
-# Implement your module commands in this script.
+# Module commands.
 
 Function Connect-MXOnline (){
 
