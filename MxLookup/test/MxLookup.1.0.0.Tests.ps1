@@ -29,108 +29,101 @@ Describe 'Connect-MXOnline' {
 
 Describe 'Get-MxLookUp' {
     
-    It 'Gets the MX record for JumpCloud' {
+    It 'Gets the MX record for example.com' {
 
-        $MX = Get-MxLookup -Command mx -Domain JumpCloud.com
+        $MX = Get-MxLookup -Command mx -Domain example.com
         $MX.Command | Should -Be "mx"
          
     }
 
-    It 'Gets the A record for JumpCloud' {
+    It 'Gets the A record for example.com' {
 
-        $A = Get-MxLookup -Command A -Domain JumpCloud.com
-        $A.Command | Should -Be "A"
+        $A = Get-MxLookup -Command a -Domain example.com
+        $A.Command | Should -Be "a"
          
     }
 
-    It 'Gets the dns record for JumpCloud' {
+    It 'Gets the dns record for example.com' {
 
-        $DNS = Get-MxLookup -Command dns -Domain JumpCloud.com
+        $DNS = Get-MxLookup -Command dns -Domain example.com
         $DNS.Command | Should -Be "dns"
          
     }
 
-    It 'Gets the SPF record for JumpCloud' {
+    It 'Gets the SPF record for example.com' {
 
-        $SPF = Get-MxLookup -Command SPF -Domain JumpCloud.com
+        $SPF = Get-MxLookup -Command spf -Domain example.com
         $SPF.Command | Should -Be "spf"
          
     }
 
-    It 'Gets the TXT record for JumpCloud' {
+    It 'Gets the TXT record for example.com' {
 
-        $TXT = Get-MxLookup -Command TXT -Domain JumpCloud.com
-        $TXT.Command | Should -Be "TXT"
+        $TXT = Get-MxLookup -Command txt -Domain example.com
+        $TXT.Command | Should -Be "txt"
          
     }
 
-    It 'Gets the SOA record for JumpCloud' {
+    It 'Gets the SOA record for example.com' {
 
-        $SOA = Get-MxLookup -Command SOA -Domain JumpCloud.com
-        $SOA.Command | Should -Be "SOA"
+        $SOA = Get-MxLookup -Command soa -Domain example.com
+        $SOA.Command | Should -Be "soa"
       
     }
 
-    It 'Gets the PTR record for JumpCloud' {
+    It 'Gets the PTR record for example.com' {
 
-        $PTR = Get-MxLookup -Command PTR -Domain JumpCloud.com
+        $PTR = Get-MxLookup -Command ptr -IPAddress 199.181.132.250
         $PTR.Command | Should -Be "PTR"
          
     }
 
-    It 'Gets the BLACKLIST record for JumpCloud' {
+    It 'Gets the BLACKLIST record for example.com' {
 
-        $BLACKLIST = Get-MxLookup -Command BLACKLIST -Domain JumpCloud.com
-        $BLACKLIST.Command | Should -Be "BLACKLIST"
+        $BLACKLIST = Get-MxLookup -Command blacklist -Domain example.com
+        $BLACKLIST.Command | Should -Be "blacklist"
          
     }
 
-    It 'Gets the SMTP record for JumpCloud' {
+    It 'Gets the SMTP record for example.com' {
 
-        $SMTP = Get-MxLookup -Command SMTP -Domain JumpCloud.com
-        $SMTP.Command | Should -Be "SMTP"
+        $SMTP = Get-MxLookup -Command Smtp -Domain example.com
+        $SMTP.Command | Should -Be "Smtp"
          
     }
 
-    It 'Gets the TCP record for JumpCloud' {
+    It 'Gets the HTTP record for example.com' {
 
-        $TCP = Get-MxLookup -Command TCP -Domain JumpCloud.com
-        $TCP.Command | Should -Be "TCP"
+        $HTTP = Get-MxLookup -Command Http -Domain example.com
+        $HTTP.Command | Should -Be "Http"
          
     }
 
-    It 'Gets the HTTP record for JumpCloud' {
+    It 'Gets the HTTP record for example.com' {
 
-        $HTTP = Get-MxLookup -Command HTTP -Domain JumpCloud.com
-        $HTTP.Command | Should -Be "HTTP"
+        $HTTP = Get-MxLookup -Command Http -Domain example.com
+        $HTTP.Command | Should -Be "Http"
          
     }
 
-    It 'Gets the HTTP record for JumpCloud' {
+    It 'Gets the HTTPS record for example.com' {
 
-        $HTTP = Get-MxLookup -Command HTTP -Domain JumpCloud.com
-        $HTTP.Command | Should -Be "HTTP"
+        $HTTPS = Get-MxLookup -Command Https -Domain example.com
+        $HTTPS.Command | Should -Be "Https"
          
     }
 
-    It 'Gets the HTTPS record for JumpCloud' {
+    It 'Gets the PING record for example.com' {
 
-        $HTTPS = Get-MxLookup -Command HTTPS -Domain JumpCloud.com
-        $HTTPS.Command | Should -Be "HTTPS"
+        $PING = Get-MxLookup -Command ping -Domain example.com
+        $PING.Command | Should -Be "ping"
          
     }
 
-    It 'Gets the PING record for JumpCloud' {
+    It 'Gets the TRACE record for example.com' {
 
-        $PING = Get-MxLookup -Command PING -Domain JumpCloud.com
-        $PING.Command | Should -Be "PING"
-         
-    }
-
-    It 'Gets the TRACE record for JumpCloud' {
-
-        $TRACE = Get-MxLookup -Command TRACE -Domain JumpCloud.com
-        $TRACE.Command | Should -Be "TRACE"
+        $TRACE = Get-MxLookup -Command trace -Domain example.com
+        $TRACE.Command | Should -Be "trace"
          
     }
 }
