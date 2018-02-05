@@ -3,7 +3,7 @@ Function Get-MxLookup {
     param (
         [Parameter(Mandatory,Position=0,
         ValueFromPipelineByPropertyName=$True)]
-        [ValidateSet("mx","a","dns","spf","txt","soa","ptr","blacklist","smtp","http","https","ping","trace")]
+        [ValidateSet("mx","a","dns","spf","txt","soa","ptr","blacklist","Smtp","Http","Https","ping","trace",IgnoreCase = $false)]
         [string]
         $Command
     )
