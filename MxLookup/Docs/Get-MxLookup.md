@@ -24,7 +24,7 @@ The Get-MxLookup command leverages the MxToolBox REST API to lookup DNS or Netwo
 ### Example 1
 
 ```powershell
-PS C:\> Get-MxLookup -Command BLACKLIST -Domain azzipa.com
+PS C:\> Get-MxLookup -Command blacklist -Domain azzipa.com
 ```
 
 This command returns the blacklist results for the domain 'azzipa.com' from MxToolBox
