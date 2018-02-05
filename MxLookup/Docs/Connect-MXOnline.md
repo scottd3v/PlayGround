@@ -1,6 +1,6 @@
 ---
-external help file:
-Module Name:
+external help file: MxLookup-help.xml
+Module Name: MxLookup
 online version:
 schema: 2.0.0
 ---
