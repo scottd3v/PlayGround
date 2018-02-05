@@ -37,23 +37,23 @@ Function Get-MxLookup {
         else {
 
             $attr = New-Object System.Management.Automation.ParameterAttribute
-                $attr.HelpMessage = "Enter a domain"
-                $attr.Mandatory = $true
-                $attr.ValueFromPipelineByPropertyName = $true
-                $attrColl = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
-                $attrColl.Add($attr)
-                $attrColl.Add((New-Object System.Management.Automation.ValidateScriptAttribute((({
-                    If ($_ -match "(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)") {
-                    $True
-                    }
-                    else {
-                    Throw "Please enter a domain such as mycompany.com or mycompany.net $_ is not a domain"
-                    }
-                })))))
-                $param = New-Object System.Management.Automation.RuntimeDefinedParameter('Domain',[string],$attrColl)
-                $dict = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary
-                $dict.Add('Domain',$param)
-                return $dict
+            $attr.HelpMessage = "Enter a domain"
+            $attr.Mandatory = $true
+            $attr.ValueFromPipelineByPropertyName = $true
+            $attrColl = New-Object System.Collections.ObjectModel.Collection[System.Attribute]
+            $attrColl.Add($attr)
+            $attrColl.Add((New-Object System.Management.Automation.ValidateScriptAttribute((({
+                If ($_ -match "(?=^.{4,253}$)(^((?!-)[a-zA-Z0-9-]{1,63}(?<!-)\.)+[a-zA-Z]{2,63}$)") {
+                $True
+                }
+                else {
+                Throw "Please enter a domain such as mycompany.com or mycompany.net $_ is not a domain"
+                }
+            })))))
+            $param = New-Object System.Management.Automation.RuntimeDefinedParameter('Domain',[string],$attrColl)
+            $dict = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary
+            $dict.Add('Domain',$param)
+            return $dict
             
         } 
 
