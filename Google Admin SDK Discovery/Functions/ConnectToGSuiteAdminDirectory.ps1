@@ -1,4 +1,6 @@
 #Source https://lazyadmin.nl/it/connect-to-google-api-with-powershell/
+#Help https://github.com/scottd3v/PlayGround/blob/master/Google%20Admin%20SDK%20Discovery/Help/Connect%20to%20the%20Google%20Admin%20API%20in%20PowerShell.md
+
 Function Connect-GSuiteAdminDirectory {
     [CmdletBinding()]
     param (
