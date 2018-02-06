@@ -30,5 +30,8 @@ Create credentials
 
 ![Create credentials](https://github.com/scottd3v/PlayGround/blob/master/Gifs/GAPI_CreateCredentials.gif)
 
+**In the Authorized redirect URIs box enter:  http://localhost/oauth2callback**
+
+
 
 ## Part 2 : Getting access tokens in PowerShell 
