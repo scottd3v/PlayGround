@@ -1,7 +1,7 @@
 $GroupUri = 'https://www.googleapis.com/admin/directory/v1/groups/testgroup@demojumpcloud.com/members'
 
 $body = @{
-   "email" =  "ameet.jani@demojumpcloud.com"
+   "email" =  "brad.stevens@demojumpcloud.com"
     "role" = "MEMBER"
 }
 

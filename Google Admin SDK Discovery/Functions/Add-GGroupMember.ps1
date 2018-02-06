@@ -9,9 +9,9 @@ Function Add-GGroupMember {
 
         [Parameter(Mandatory,ValueFromPipelineByPropertyName,
         Position=1)]
-        [alias("email","user")]
+        [alias("email","user","Email address")]
         [String]$UserEmailAddress
-        
+       
     )
     
     begin {
