@@ -1,6 +1,5 @@
 #Source https://lazyadmin.nl/it/connect-to-google-api-with-powershell/
-
-function Connect-GSuiteAdminDirectory {
+Function Connect-GSuiteAdminDirectory {
     [CmdletBinding()]
     param (
 
@@ -57,20 +56,3 @@ function Connect-GSuiteAdminDirectory {
         Return $GSuiteAdminDirectoryToken
     }
 }
-
-
-
-$AllGroupsUri = "https://www.googleapis.com/admin/directory/v1/groups/testgroup%40demojumpcloud.com/members"
- 
-Invoke-RestMethod -Headers @{Authorization = "Bearer $($GSuiteAdminDirectoryToken.access_token)"} -Uri $AllGroupsUri -Method GET -ContentType 'application/json'
-
-$Group = 'https://www.googleapis.com/admin/directory/v1/groups/testgroup@demojumpcloud.com/members'
-
-$b = @{
-   "email" =  "scott.reed@demojumpcloud.com"
-    "role" = "MEMBER"
-}
-
-$c = $b | ConvertTo-Json
-
-Invoke-RestMethod -Headers @{Authorization = "Bearer $($GSuiteAdminDirectoryToken.access_token)"} -Uri $Group -Body $c -Method POST -ContentType 'application/json'
