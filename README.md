@@ -7,7 +7,7 @@ Module folders contain PowerShell Modules Published on the PSGallery that were b
 
 ### Interested In Learning More About PowerShell? 
 
-JumpCloud is a great sandbox for leaning PowerShell. With JumpCloud you get a directory to play with with up to 10 users free forever. [Sign up for a free account here](https://jumpcloud.com/signup)
+JumpCloud is a great sandbox for leaning PowerShell. With JumpCloud you get a directory to play with with up to 10 users free forever. [Sign up for a free account here](https://jumpcloud.com/signup?rs=GitHub&cs=Powershell)
 
 Once signed up [install the JumpCloud PowerShell](https://github.com/TheJumpCloud/support/wiki/Installing-the-JumpCloud-PowerShell-Module) module which runs on Mac, Windows and Linux. 
 
