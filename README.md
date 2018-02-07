@@ -24,5 +24,6 @@ Once installed check out the [JumpCloud PowerShell Module Command Basics](https:
 - [Windows PowerShell Cookbook, 3rd Edition](http://shop.oreilly.com/product/0636920024132.do)
 - [The PowerShell Scripting and Toolmaking Book](https://leanpub.com/powershell-scripting-toolmaking)
 
-#### Community
+#### Community / Links
 - [PowerShell Reddit](https://www.reddit.com/r/PowerShell/)
+- [Great blog with deep dive for Invoke-RestMehod](https://get-powershellblog.blogspot.com/)
