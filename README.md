@@ -26,4 +26,5 @@ Once installed check out the [JumpCloud PowerShell Module Command Basics](https:
 
 #### Community / Links
 - [PowerShell Reddit](https://www.reddit.com/r/PowerShell/)
+- [PowerShell Team YouTube channel](https://www.youtube.com/channel/UCMhQH-yJlr4_XHkwNunfMog)... Stay up to date on whats new in Pwsh Core by watching the recorded community calls.
 - [Great blog with deep dive for Invoke-RestMehod](https://get-powershellblog.blogspot.com/)
