@@ -28,3 +28,4 @@ Once installed check out the [JumpCloud PowerShell Module Command Basics](https:
 - [PowerShell Reddit](https://www.reddit.com/r/PowerShell/)
 - [PowerShell Team YouTube channel](https://www.youtube.com/channel/UCMhQH-yJlr4_XHkwNunfMog)... Stay up to date on whats new in Pwsh Core by watching the recorded community calls.
 - [Great blog with deep dive for Invoke-RestMehod](https://get-powershellblog.blogspot.com/)
+- [Monad Manifesto](http://www.jsnover.com/Docs/MonadManifesto.pdf)... A 'why' from the founder of Powershell Jeffery Snover written in 2002 that is still applicable to today surrounding why administration automation is so important. 
