@@ -1,4 +1,4 @@
-## 0.0.1
+## 0.0.2
 Release Date: April 27, 2018
 
 #### RELEASE NOTES
