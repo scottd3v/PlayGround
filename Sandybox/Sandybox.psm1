@@ -29,9 +29,9 @@ Function Connect-SandyOnline ()
     {
         [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-        $GitHubModuleInfoURL = 'https://github.com/TheSandybox/support/blob/master/PowerShell/ModuleBanner.md' #Update this
+        $GitHubModuleInfoURL = 'https://github.com/scottd3v/PlayGround/blob/master/Sandybox/ModuleBanner.md' #Update this
 
-        $ReleaseNotesURL = 'https://git.io/jc-pwsh-releasenotes' #Update this
+        $ReleaseNotesURL = 'https://github.com/scottd3v/PlayGround/blob/master/Sandybox/ModuleChangelog.md' #Update this
 
 
     }
@@ -184,6 +184,28 @@ Function Connect-SandyOnline ()
         
     }#End endblock
 
+}
+
+function Get-Sandy
+{
+    [CmdletBinding()]
+    param (
+        
+    )
+    
+    begin
+    {
+
+        Connect-SandyOnline
+    }
+    
+    process
+    {
+    }
+    
+    end
+    {
+    }
 }
 
 
